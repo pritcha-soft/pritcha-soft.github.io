@@ -1,0 +1,70 @@
+body
+{
+	margin-top: 200px;
+	background:#aaa;
+}
+
+h1
+{
+	color=red;
+}
+
+p
+{
+		margin:0;
+}
+
+.cont1
+{	
+    margin-right: 10%;
+	margin-left:10%;
+    background: #00ff55;
+	position: relative;
+	
+	/*overflow: hidden;*/
+}
+
+
+#blok1
+{
+    background: blue;
+	width: 50%;
+	height: 100px;
+	
+}
+
+#blok2
+{
+    background: rgba(112, 112, 00, 0.5);
+	width: 50%;
+	height: 200px;
+	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	
+
+}
+
+#blok3
+{
+    background: #005555;
+	width: 50%;
+	height: 50%;
+	
+}
+
+html
+{
+	position: relative;
+}
+
+#myach
+{
+	position: fixed;
+	
+	bottom: 0px;
+	right: 0px;
+	
+}
