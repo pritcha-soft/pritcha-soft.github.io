@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+html
+{
+	font-size:14px;
+}
+
+@media screen and (max-width: 700px) {
+	html
+	{
+		font-size:12px;
+	}	
+}
+
+body
+{
+	max-width:940px;
+	margin:0 auto 0 auto;
+	padding: 0 42px 0 42px;
+}
+
+@media screen and (max-width: 1024px) {
+	body
+	{
+		width:90%;
+		padding:0 5% 0 5%;
+	}	
+}
+
+header
+{
+	margin-bottom:100px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin-top:0;
+	margin-bottom:15px;
+	font-family:'Russo One', sans-serif;
+	font-weight: normal;
+}
+
+h2
+{
+	font-size:3.43rem;
+}
+
+h3
+{
+	font-size:1.71rem;
+}
+
+.icon-title
+{
+	font-size: 1.57rem;
+	margin-left:0.71rem;
+}
+
+/* блок стилей для звезд */
+.hider
+{
+	overflow: hidden;
+	
+}
+
+@media screen and (max-width: 1024px) {
+	.hider
+	{
+		-webkit-mask:url('img/opacity-mask.png');
+		-webkit-mask-repeat:no-repeat;
+		-webkit-mask-size:100% 100%;
+		-webkit-mask-position:right;
+	}	
+}
+
+.stars
+{
+	margin-top:15px;
+	width: 910px;
+	padding:0 15px 0 15px;
+
+	/* настройки flex-box */
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap; 
+}
+
+.star-container
+{
+	display: block;
+	width:200px;
+	height:200px;
+	position:relative;
+	color: black;
+	text-transform: uppercase;
+}
+
+
+.star, .bg-star
+{
+	width:100%;
+	height:100%;
+}
+
+.star-container:hover .bg-star
+{
+	-webkit-filter: blur(10px);
+	opacity: 0.5;
+}
+
+.star-container:hover h3
+{
+	bottom:0px;
+	opacity: 1;
+}
+
+.star
+{
+	-webkit-mask: url('img/star-mask.svg');
+	-webkit-mask-repeat:no-repeat;
+	-webkit-mask-size:95.105% 90.45%;
+	-webkit-mask-position:center top;
+	position: absolute;
+}
+.bg-star
+{
+	position: absolute;
+	transition:all 0.4s;
+	border-radius: 50%;
+}
+
+.star-container h3
+{
+	position: absolute;
+	padding:5px 0 5px 0;
+	bottom:-100px;
+	width:100%;
+	margin:0;
+	text-align: center;
+	transition: all 0.4s;
+	background-color: rgba(255,255,255,0.8);
+}
+/* конец блока про звезд */
