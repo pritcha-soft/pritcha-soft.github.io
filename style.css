@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 
+@font-face {
+    font-family: Oswald-ExtraLight; /* Гарнитура шрифта */
+    src: url(Oswald-ExtraLight.ttf); /* Путь к файлу со шрифтом */
+	
+	font-family: Oswald-Medium;
+	src: url(Oswald-Medium.ttf);
+   }
+
 html, body
 {
 	font-size:14px;
@@ -49,6 +57,13 @@ h3
 {
 	font-size:1.71rem;
 }
+
+h4
+{
+	font-family: 'Oswald-Medium', 'Oswald-ExtraLight', 'Arial', 'Oswald', sans-serif;
+	font-size: 1.15rem;
+}
+
 
 .icon-title
 {
@@ -288,4 +303,3 @@ h4
 	}
 }
 */
-
