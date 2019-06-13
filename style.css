@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 
-@font-face {
-    font-family: Oswald-ExtraLight; /* Гарнитура шрифта */
-    src: url(Oswald-ExtraLight.ttf); /* Путь к файлу со шрифтом */
-	
-	font-family: Oswald-Medium;
-	src: url(Oswald-Medium.ttf);
-   }
-
-html, body
+html
 {
 	font-size:14px;
 }
@@ -58,13 +50,6 @@ h3
 	font-size:1.71rem;
 }
 
-h4
-{
-	font-family: 'Oswald-Medium', 'Oswald-ExtraLight', 'Arial', 'Oswald', sans-serif;
-	font-size: 1.15rem;
-}
-
-
 .icon-title
 {
 	font-size: 1.57rem;
@@ -76,16 +61,6 @@ h4
 {
 	overflow: hidden;
 	
-}
-
-@media screen and (max-width: 1024px) {
-	.hider
-	{
-		-webkit-mask:url('img/opacity-mask.png');
-		-webkit-mask-repeat:no-repeat;
-		-webkit-mask-size:100% 100%;
-		-webkit-mask-position:right;
-	}	
 }
 
 .stars
@@ -156,150 +131,3 @@ h4
 	background-color: rgba(255,255,255,0.8);
 }
 /* конец блока про звезд */
-
-/* начало блок Новинки */
-.contNewMusic
-{
-	/*background-color: #EA69A6;	*/	/*!!!!!!!!временно!!!!!!!*/
-	margin-top: 15px;
-}
-.fa-bolt 									/*знак молнии*/
-{
-	font-size: 1.57rem;
-	margin-left: 0.71rem;
-}
-
-
-.bg-starNew
-{
-	width: 96%;
-}
-
-/*-------------------------------------------------*/
-h3
-{
-	margin:0px;
-}
-h4
-{
-	margin-bottom: 0.7rem;
-}
-
-.starsBal
-{
-	background-image:url('img/rating.png');
-	width:100px;
-	height:17px;
-	margin-top: 6px;
-	margin-left:auto;
-	margin-right:auto;
-	background-position: 0 -68px; /* -14=1зв -32это2зв -50это3зв -68=4зв -86=5зв */
-}
-
-
-
-.contNewMusic
-{
-	margin-top: 0;
-	display:flex; /*ВЫРАВНИВАНИЕ в ряд э-тов*/
-	justify-content:space-around; /*РАСПРЕДЕЛЕНИЕ равномерно распределяются по всей строке*/
-	flex-wrap: wrap; /*АВТОПЕРЕНОС придает  гибкость флекс-эл-там: элементы разбиваются на несколько строк*/ 
-	width:100%;
-	/*overflow:hidden; ВРОДЕ НЕ НУЖНО!!! содержимое, выходящее за пределы блока элемента, будет скрыто.*/
-}
-.contAlbom
-{
-	margin: 15px;
-	width:240px;
-}
-
-.linkAlbom
-{
-	display:block;		/*теперь ведет себя как блочный эл-т*/
-	/*position:relative;*/
-	height:240px;
-	width:240px;
-}
-
-
-@media screen and (max-width: 960px)
-{
-	.contAlbom
-	{
-		width:250px;
-	}
-	
-	.linkAlbom
-	{
-		width:250px;
-		height:250px;
-	}
-}
-
-
-
-
-
-@media screen and (max-width: 720px) /*было 413 680*/
-{
-	.contNewMusic
-	{
-		justify-content:space-around; /*раньше between*/	
-	}
-
-	.contAlbom
-	{
-		width:159px;
-	}
-	
-	.linkAlbom
-	{
-		width:160px;
-		height:160px;
-	}
-}
-
-
-/*медиа запрос для маленьких экранов*/
-@media screen and (max-width: 435px)
-{
-	.contNewMusic
-	{
-		justify-content:center;
-	}
-
-	.contAlbom
-	{
-		width: 289px;
-		margin:0;
-	}
-	
-	.linkAlbom
-	{
-		width: 289px;
-		height: 289px;	
-	}
-}
-
-/*
-для ОЧЕНЬ маленьких экранчиков
-@media screen and (max-width: 304px)
-{
-	.contNewMusic
-	{
-		justify-content:center;
-	}
-
-	.contAlbom
-	{
-		width: 100%;
-		margin:0;
-	}
-	
-	.linkAlbom
-	{
-		width: 100%;
-		height: 100%;	
-	}
-}
-*/
